@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="author" content="">
+<meta name="csrf-token" content="5pOWeIwHSKKW2U2pz4Bi2cnbPPSw65yPfb3DbAzi">
+<link rel="icon" type="image/png" sizes="16x16" href="https://my.unam.edu.na/plugins/images/favicon.png">
+<title>UNAM Portal</title>
+
+<!-- Bootstrap Core CSS -->
+<link href="https://my.unam.edu.na/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+<!-- animation CSS -->
+<link href="https://my.unam.edu.na/css/animate.css" rel="stylesheet">
+<!-- Custom CSS -->
+<link href="https://my.unam.edu.na/css/style.css" rel="stylesheet">
+<!-- color CSS -->
+<link href="https://my.unam.edu.na/css/colors/blue.css" id="theme"  rel="stylesheet">
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+<body>
+<!-- Preloader -->
+<div class="preloader">
+  <div class="cssload-speeding-wheel"></div>
+</div>
+
+<section>
+  <div class="col-md-9 hidden-sm" style="position:absolute; top:0; bottom:0; left:0; right:0; display:flex; justify-content: center; align-items: center">
+    <style>
+      .portal-ad-zone {
+        width: 100%;
+        height: 100%;
+        flex-shrink: 0;
+        display: none;
+        object-fit: cover;
+        object-position: center;
+        cursor: pointer;
+      }
+    </style>
+    <div class="cover-page" id="slideshow-container">
+      <a href="https://www.postfin.com.na/" target="_blank"><img src="https://my.unam.edu.na/ad-banners/1719928307.jpg" class="portal-ad-zone" data-zone='1' data-banner="39"></a>
+    </div>
+  </div>
+
+  <div class="login-box login-sidebar col-md-3 col-sm-12">
+    <div class="white-box">
+      <form class="form-horizontal form-material" id="loginform">
+        <a href="javascript:void(0)" class="text-center db"><img src="https://my.unam.edu.na/plugins/images/logo.png" alt="Home" /><br /></a>
+        <center>
+          <h3><strong>UNAM Portal</strong></h3>
+        </center>
+
+        <div class="form-group m-t-40 form-group">
+          <div class="col-xs-12">
+            <input class="form-control" type="text" required="" placeholder="Username" id="username" required autofocus>
+          </div>
+        </div>
+        <div class="form-group form-group ">
+          <div class="col-xs-12">
+            <input class="form-control" type="password" id="password" required placeholder="Password">
+            <span class="help-block">
+              <strong></strong>
+            </span>
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="col-md-12">
+            <div class="checkbox checkbox-primary pull-left p-t-0">
+              <input id="checkbox-signup" type="checkbox" name="remember">
+              <label for="checkbox-signup"> Remember me </label>
+            </div>
+            <a href="javascript:void(0)" id="to-recover" class="text-dark pull-right"><i class="fa fa-lock m-r-5"></i> Forgot Password</a>
+          </div>
+        </div>
+        <div class="form-group text-center m-t-20">
+          <div class="col-xs-12">
+            <button class="btn btn-info btn-lg btn-block text-uppercase waves-effect waves-light" type="button" onclick="validateLogin()">Log In</button>
+          </div>
+        </div>
+      </form>
+
+      <form class="form-horizontal" id="recoverform" action="home.html">
+        <div class="form-group ">
+          <div class="col-xs-12">
+            <h3>Change your password</h3>
+            <p class="text-muted">To update your password, please follow the instructions below </p>
+            <p>
+              <strong><a href="/downloads/UNAM_How_to_Change_your_Student_Password.pdf" target="_blank">Download Instructions </a> </strong><br>
+            </p>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <div class="modal fade" id="mobileAd" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-body">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+          <div id="slideshow-container">
+            <input type="hidden" id="ad-count" value="1">
+            <a href="https://www.postfin.com.na/" target="_blank"><img src="https://my.unam.edu.na/ad-banners/1719928307.jpg" class="portal-ad-zone-mobile" data-zone='1' data-banner="39"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function validateLogin() {
+      const username = document.getElementById('username').value;
+      const password = document.getElementById('password').value;
+      
+      if (username === '202015503' && password === '22069') {
+        window.location.href = 'home.html';
+      } else {
+        alert('Invalid username or password.');
+      }
+    }
+  </script>
+
+  <script>
+    let currentBanner = 0;
+    const banners = document.querySelectorAll('.portal-ad-zone');
+
+    function showBanner(index) {
+      banners.forEach((banner, i) => {
+        banner.style.display = i === index ? 'block' : 'none';
+      });
+    }
+
+    function rotateBanners() {
+      currentBanner = (currentBanner + 1) % banners.length;
+      showBanner(currentBanner);
+    }
+
+    showBanner(currentBanner);
+    setInterval(rotateBanners, 9000);
+
+    let currentMobileBanner = 0;
+    const mobileBanners = document.querySelectorAll('.portal-ad-zone-mobile');
+
+    function showMobileBanner(index) {
+      mobileBanners.forEach((banner, i) => {
+        banner.style.display = i === index ? 'block' : 'none';
+      });
+    }
+
+    function rotateMobileBanners() {
+      currentMobileBanner = (currentMobileBanner + 1) % mobileBanners.length;
+      showMobileBanner(currentMobileBanner);
+    }
+
+    showMobileBanner(currentMobileBanner);
+    setInterval(rotateMobileBanners, 9000);
+  </script>
+
+</section>
+
+<!-- jQuery -->
+<script src="https://my.unam.edu.na/plugins/bower_components/jquery/dist/jquery.min.js"></script>
+<!-- Bootstrap Core JavaScript -->
+<script src="https://my.unam.edu.na/bootstrap/dist/js/bootstrap.min.js"></script>
+<!-- Menu Plugin JavaScript -->
+<script src="https://my.unam.edu.na/plugins/bower_components/sidebar-nav/dist/sidebar-nav.min.js"></script>
+<!--slimscroll JavaScript -->
+<script src="https://my.unam.edu.na/js/jquery.slimscroll.js"></script>
+<!--Wave Effects -->
+<script src="https://my.unam.edu.na/js/waves.js"></script>
+<!-- Sparkline chart JavaScript -->
+<script src="https://my.unam.edu.na/plugins/bower_components/jquery-sparkline/jquery.sparkline.min.js"></script>
+<script src="https://my.unam.edu.na/plugins/bower_components/jquery-sparkline/jquery.charts-sparkline.js"></script>
+<!-- Custom Theme JavaScript -->
+<script src="https://my.unam.edu.na/js/custom.min.js"></script>
+<script src="https://my.unam.edu.na/js/ads.js"></script>
+<!--Style Switcher -->
+<script src="https://my.unam.edu.na/plugins/bower_components/styleswitcher/jQuery.style.switcher.js"></script>
+</body>
+</html>

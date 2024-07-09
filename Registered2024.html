@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-135458699-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-135458699-1');
+    </script>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://my.unam.edu.na/plugins/images/favicon.png">
+    <meta name="csrf-token" content="FOpjlA66280Nmr798fMYljMHtCYSKv5IqSWEfVDf">
+    <title>UNAM Portal</title>
+
+<!-- FontAwesome for icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="https://my.unam.edu.na/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://my.unam.edu.na/plugins/bower_components/bootstrap-datepicker/bootstrap-datepicker.min.css" rel="stylesheet" type="text/css" />
+    <link href="https://my.unam.edu.na/plugins/bower_components/bootstrap-select/bootstrap-select.min.css" rel="stylesheet" />
+    <link href="https://my.unam.edu.na/plugins/bower_components/datatables/jquery.dataTables.min.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdn.datatables.net/buttons/1.2.2/css/buttons.dataTables.min.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+    <!-- Menu CSS -->
+    <link href="https://my.unam.edu.na/plugins/bower_components/sidebar-nav/dist/sidebar-nav.min.css" rel="stylesheet">
+    <link href="https://my.unam.edu.na/plugins/bower_components/jqueryui/jquery-ui.min.css" rel="stylesheet">
+    <!-- toast CSS -->
+    <link href="https://my.unam.edu.na/plugins/bower_components/toast-master/css/jquery.toast.css" rel="stylesheet">
+    <!-- morris CSS -->
+    <link href="https://my.unam.edu.na/plugins/bower_components/morrisjs/morris.css" rel="stylesheet">
+    <!-- summernotes CSS -->
+    <link href="https://my.unam.edu.na/plugins/bower_components/summernote/dist/summernote.css" rel="stylesheet" />
+    <!-- switchery CSS -->
+    <link href="https://my.unam.edu.na/plugins/bower_components/switchery/dist/switchery.min.css" rel="stylesheet" />
+    <!-- animation CSS -->
+    <link href="https://my.unam.edu.na/css/animate.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="https://my.unam.edu.na/css/style.css" rel="stylesheet">
+
+    <!-- Custom CSS 2019 june 13th-->
+    <link href="https://my.unam.edu.na/css/custom.css" rel="stylesheet">
+
+    <!-- color CSS -->
+    <link href="https://my.unam.edu.na/css/colors/default.css" id="theme" rel="stylesheet">
+    <!-- Typehead CSS -->
+    <link href="https://my.unam.edu.na/plugins/bower_components/typeahead.js-master/jquery.typeahead.css" rel="stylesheet">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js')}}"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js')}}"></script>
+    <![endif]-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://my.unam.edu.na/travel/assets/js/form/travelapplication.js"></script>
+    <style>
+        .ribbon-wrapper:hover {
+            background-color: #000;
+            .table_for_print_refunds tr {
+                line-height: 14px;
+            }
+    </style>
+</head>
+
+<body class="fix-sidebar">
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="cssload-speeding-wheel"></div>
+    </div>
+    <div id="wrapper">
+          <!-- Navigation -->
+<nav class="navbar navbar-default navbar-static-top m-b-0">
+    <div class="navbar-header">
+      <a class="navbar-toggle hidden-sm hidden-md hidden-lg" href="javascript:void(0)" data-toggle="collapse" data-target=".navbar-collapse">
+        <i class="fas fa-bars"></i>
+      </a>
+      <div class="top-left-part">
+        <a class="logo" href="home.html">
+          <b>
+            <!-- This is dark logo icon -->
+            <img src="https://my.unam.edu.na/img/main-logo.png" alt="home" class="light-logo" width="60" height="60" />
+            <!-- This is light logo icon -->
+          </b>
+          <span class="hidden-xs">
+            <!-- This is dark logo text -->
+            <img src="https://my.unam.edu.na/img/main-logo.png" alt="home" class="dark-logo" />
+            <!-- This is light logo text -->
+          </span>
+        </a>
+      </div>
+      <ul class="nav navbar-top-links navbar-left hidden-xs">
+        <li>
+          <a href="javascript:void(0)" class="open-close hidden-xs waves-effect waves-light">
+            <i class="fas fa-bars"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  
+  <!-- Left navbar-header -->
+<div class="navbar-default sidebar" role="navigation">
+    <div class="sidebar-nav navbar-collapse slimscrollsidebar">
+      <ul class="nav" id="side-menu">
+        <li class="user-pro">
+          <a href="#" class="waves-effect">
+            <span class="hide-menu">XIE YIMING
+              <span class="fa arrow"></span>
+            </span>
+          </a>
+          <ul class="nav nav-second-level">
+            <li>
+              <a href="home.html">
+                <i class="fa fa-power-off"></i> Logout
+              </a>
+              <form id="logout-form" action="index.html" method="POST" style="display: none;">
+                <input type="hidden" name="_token" value="uxoHPChCWuGP3tEKSReuHsbAbpE0aCIugTRawgbK">
+              </form>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="home.html" class="waves-effect">
+            <i class="fa fa-dashboard"></i> <span class="hide-menu"> Dashboard </span>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="waves-effect">
+            <i class="fa fa-book"></i> <span class="hide-menu"> Academic <span class="fa arrow"></span></span>
+          </a>
+          <ul class="nav nav-second-level">
+            <li><a href="proof-of-registration.html">Proof of Registration</a></li>
+            <li><a href="62BPOL.html">Progress Report</a></li>
+            <li><a href="academic-record.html">Academic Record</a></li>
+            <li><a href="timetable.html">Exam Timetable</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+  
+  
+      </ul>
+      <ul class="nav" id="side-menu">
+        <li class="sidebar-search hidden-sm hidden-md hidden-lg">
+          <!-- input-group -->
+          <div class="input-group custom-search-form">
+            <input type="text" class="form-control" placeholder="Search...">
+            <span class="input-group-btn">
+              <button class="btn btn-default" type="button">
+                <i class="fa fa-search"></i>
+              </button>
+            </span>
+          </div>
+          <!-- /input-group -->
+        </li>
+      </ul>
+    </div>
+  </div>
+  
+                        <!--  -->
+
+
+
+                        </li>
+                    </ul>
+            </div>
+        </div>
+        <!-- Left navbar-header end -->
+        <!-- Page Content -->
+        <div id="page-wrapper">
+            <div class="container-fluid">
+                <script type="text/javascript">
+                    function myFunction(AcademicYear, status, QualificationCode) {
+                        var myWindow = window.open("/progress-report/print/" + AcademicYear + "/" + status + "/" + QualificationCode, "Progress Report", "width=600,height=600,resizable,scrollbars=yes,status=1");
+                    }
+                </script>
+                <div class="row bg-title">
+
+                    <div class="col-lg-3 col-md-4 col-sm-4 col-xs-12">
+                        <h4 class="page-title">Proof of Registration</h4>
+                    </div>
+                    <div class="col-lg-9 col-sm-8 col-md-8 col-xs-12">
+                        <ol class="breadcrumb">
+                            <li><a href="#">Academic</a></li>
+                            <li class="active">Proof of Registration</li>
+                        </ol>
+                    </div>
+                    <!-- /.col-lg-12 -->
+                </div>
+                <div class="col-sm-12">
+                    <div class="white-box printableArea">
+                        <h3 class="box-title m-b-0"></h3>
+                        <h3>
+
+                            <b>Proof of Registration</b>
+                            <span class="pull-right">
+                     
+
+                            <!-- <a href="/progress-report/print/2024/Registered/62BPOL" target="_blank" class="btn btn-primary">
+          <span><i class="fa fa-print"></i> PRINTABLE VERSION</span>
+        </a> -->
+                            </span>
+                        </h3>
+                        <hr>
+
+                        <div class="row">
+                            <div class="col-md-3">
+                                <span><strong>SURNAME AND NAME</strong></span>
+                            </div>
+                            <div class="col-md-4">
+                                : MR XIE YIMING
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-3">
+                                <span><strong>STUDENT NUMBER</strong></span>
+                            </div>
+                            <div class="col-md-4">
+                                : 202015503
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-3">
+                                <span><strong>IDENTITY NUMBER</strong></span>
+                            </div>
+                            <div class="col-md-4">
+                                : E9 1427539
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-3">
+                                <span><strong>DATE OF BIRTH</strong></span>
+                            </div>
+                            <div class="col-md-4">
+                                : 1991-05-01
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <span> &nbsp</span>
+                            </div>
+                        </div>
+                        <span> THIS IS TO CERTIFY THAT THE STUDENT HAS BEEN REGISTERED AS FOLLOWS:
+</span>
+<div>
+</div>    
+            
+                        
+                        <div class="row">
+                            <div class="col-md-3">
+                                <span><strong>ACADEMIC YEAR</strong></span>
+                            </div>
+                            <div class="col-md-4">
+                                : 2024
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-3">
+                                <span><strong>QUALIFICATION</strong></span>
+                            </div>
+                            <div class="col-md-4">
+                                : 12MSAF - MASTER OF SCIENCE IN ACCOUNTING AND FINANCE 
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-3">
+                                <span><strong>YEAR LEVEL</strong></span>
+                            </div>
+                            <div class="col-md-4">
+                                : 2
+                            </div>
+                        </div>
+
+                        <hr>
+                        <table width="100%">
+                            <thead>
+                                <tr>
+                                    <th>MODULE CODE</th>
+                                    <th>MODULE NAME</th>
+                                    <th>STUDY MODE</th>                               
+                                    <th>PERIOD</th>
+                                </tr>
+
+                            </thead>
+                            <tbody>
+
+
+
+                                <tr>
+                                    <td>AIF5931</td>
+                                    <td>International Investment and Finance</td>
+                                    <td>FM</td>
+                                    <td>SEMESTER ONE</td>
+                                    
+                                    <tr>
+                                        <td>AIM5931 </td>
+                                        <td>Investment Management and Financial Derivatives </td>
+                                        <td>FM</td>
+                                        <td>SEMESTER ONE</td>
+                                        
+                                    <tr>
+                                </tr>
+
+                            
+                                    <tr>
+                                        <td>ACI5951</td>
+                                        <td>Contemporary Issues in Accounting& Finance</td>
+                                        <td>FM</td>
+                                        <td>SEMESTER ONE</td>
+                                        
+                                    <tr>
+
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>AFI5951</td>
+                                    <td>Financial Investigation & Forensic Accounting</td>
+                                    <td>FM</td>
+                                    <td>SEMESTER ONE</td>
+                                    
+                                <tr>
+
+                                </td>
+
+                            </tr>
+
+                            <tr>
+                                <td>ATH5972</td>
+                                <td>Thesis</td>
+                                <td>FM</td>
+                                <td>SEMESTER TWO</td>
+                                
+                            <tr>
+
+                            </td>
+
+                        </tr>
+
+
+            
+
+
+                                    </td>
+                                </tr>
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="8">
+                                        <hr>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="8"> <strong> <a href="proof-of-registration.html"> Back</a>
+              
+                                        </strong>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <!-- /.container-fluid -->
+            <footer class="footer text-center" style="position: fixed;">
+                <div class="cover-page" id="zone3-slideshow-container">
+                </div>
+            </footer>
+            <!-- /#page-wrapper -->
+        </div>
+        <!-- /#wrapper -->
+
+        <!-- custom script for IT Services - NT2019 -->
+        <script src="https://my.unam.edu.na/js/script.js"></script>
+
+        <!-- jQuery -->
+        <script src="https://my.unam.edu.na/plugins/bower_components/jquery/dist/jquery.min.js"></script>
+        <script src="https://my.unam.edu.na/plugins/bower_components/jqueryui/jquery-ui.min.js"></script>
+        <!-- Bootstrap Core JavaScript -->
+        <script src="https://my.unam.edu.na/bootstrap/dist/js/bootstrap.min.js"></script>
+        <!-- Menu Plugin JavaScript -->
+        <script src="https://my.unam.edu.na/plugins/bower_components/sidebar-nav/dist/sidebar-nav.min.js"></script>
+        <!--slimscroll JavaScript -->
+        <script src="https://my.unam.edu.na/js/jquery.slimscroll.js"></script>
+        <!--Wave Effects -->
+        <script src="https://my.unam.edu.na/js/waves.js"></script>
+        <!--Counter js -->
+        <script src="https://my.unam.edu.na/plugins/bower_components/waypoints/lib/jquery.waypoints.js"></script>
+        <script src="https://my.unam.edu.na/plugins/bower_components/counterup/jquery.counterup.min.js"></script>
+        <!--Morris JavaScript -->
+        <!--  <script src="https://my.unam.edu.na/plugins/bower_components/raphael/raphael-min.js"></script>
+      <script src="https://my.unam.edu.na/plugins/bower_components/morrisjs/morris.js"></script> -->
+        <!-- Custom Theme JavaScript -->
+        <script src="https://my.unam.edu.na/js/custom.min.js"></script>
+
+        <!-- Sparkline chart JavaScript -->
+        <script src="https://my.unam.edu.na/plugins/bower_components/jquery-sparkline/jquery.sparkline.min.js"></script>
+        <script src="https://my.unam.edu.na/plugins/bower_components/jquery-sparkline/jquery.charts-sparkline.js"></script>
+        <!--       <script src="https://my.unam.edu.na/js/dashboard1.js"></script>
+ -->
+        <!-- Sparkline chart JavaScript -->
+        <script src="https://my.unam.edu.na/plugins/bower_components/jquery-sparkline/jquery.sparkline.min.js"></script>
+        <script src="https://my.unam.edu.na/plugins/bower_components/jquery-sparkline/jquery.charts-sparkline.js"></script>
+
+        <!--Style Switcher -->
+        <script src="https://my.unam.edu.na/plugins/bower_components/styleswitcher/jQuery.style.switcher.js"></script>
+        <script src="https://my.unam.edu.na/plugins/bower_components/datatables/jquery.dataTables.min.js"></script>
+        <script src="https://my.unam.edu.na/plugins/bower_components/custom-select/custom-select.min.js" type="text/javascript"></script>
+        <script src="https://my.unam.edu.na/plugins/bower_components/bootstrap-select/bootstrap-select.min.js" type="text/javascript"></script>
+        <script src="https://my.unam.edu.na/plugins/bower_components/bootstrap-datepicker/bootstrap-datepicker.min.js"></script>
+        <script src="https://my.unam.edu.na/plugins/bower_components/switchery/dist/switchery.min.js"></script>
+        <!-- start - This is for export functionality only -->
+        <script src="https://cdn.datatables.net/buttons/1.2.2/js/dataTables.buttons.min.js"></script>
+        <script src="https://cdn.datatables.net/buttons/1.2.2/js/buttons.flash.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/2.5.0/jszip.min.js"></script>
+        <script src="https://cdn.rawgit.com/bpampuch/pdfmake/0.1.18/build/pdfmake.min.js"></script>
+        <script src="https://cdn.rawgit.com/bpampuch/pdfmake/0.1.18/build/vfs_fonts.js"></script>
+        <script src="https://cdn.datatables.net/buttons/1.2.2/js/buttons.html5.min.js"></script>
+        <script src="https://cdn.datatables.net/buttons/1.2.2/js/buttons.print.min.js"></script>
+
+        <!-- Typehead Plugin JavaScript -->
+        <script src="https://my.unam.edu.na/plugins/bower_components/typeahead.js-master/jquery.typeahead.js"></script>
+        <script src="https://my.unam.edu.na/js/students.js"></script>
+        <script src="https://my.unam.edu.na/js/workload.js"></script>
+        <script src="https://my.unam.edu.na/js/modules.js"></script>
+        <script src="https://my.unam.edu.na/js/bootbox.min.js"></script>
+        <script src="https://my.unam.edu.na/js/cbpFWTabs.js"></script>
+        <script src="https://my.unam.edu.na/js/ads.js"></script>
+        <script src="https://my.unam.edu.na/plugins/bower_components/summernote/dist/summernote.min.js"></script>
+        <script type="text/javascript">
+            (function() {
+                [].slice.call(document.querySelectorAll('.sttabs')).forEach(function(el) {
+                    new CBPFWTabs(el);
+                });
+            })();
+        </script>
+        <!-- <script src="https://my.unam.edu.na/plugins/bower_components/typeahead.js-master/dist/typeahead-init.js"></script>
+ -->
+        <!--Style Switcher -->
+        <!-- end - This is for export functionality only -->
+        <script>
+            $('#dataTable').DataTable({
+                dom: 'Bfrtip',
+                buttons: [
+                    'copy', 'csv', 'excel', 'pdf', 'print'
+                ]
+            });
+            $('.selectpicker').selectpicker();
+
+            // Date Picker
+            jQuery('.mydatepicker, #datepicker').datepicker({
+                format: 'yyyy-mm-dd'
+            });
+            jQuery('#datepicker-autoclose').datepicker({
+                autoclose: true,
+                todayHighlight: true
+            });
+        </script>
+        <script>
+            jQuery(document).ready(function() {
+                $('.summernote').summernote({
+                    height: 350, // set editor height
+                    minHeight: null, // set minimum height of editor
+                    maxHeight: null, // set maximum height of editor
+                    focus: false // set focus to editable area after initializing summernote
+                });
+                $('.inline-editor').summernote({
+                    airMode: true
+                });
+            });
+            window.edit = function() {
+                $(".click2edit").summernote()
+            }, window.save = function() {
+                $(".click2edit").summernote('destroy');
+            }
+        </script>
+        <script>
+            jQuery(document).ready(function() {
+                // Switchery
+                var elems = Array.prototype.slice.call(document.querySelectorAll('.js-switch'));
+                $('.js-switch').each(function() {
+                    new Switchery($(this)[0], $(this).data());
+                });
+            });
+        </script>
+
+        <script>
+            //Bigger screens
+            var currentZone4Banner = 0;
+            var zone4Banners = document.querySelectorAll('.portal-zone-4');
+
+            function showZone3Banner(index) {
+                zone4Banners.forEach((banner, i) => {
+                    banner.style.display = i === index ? 'block' : 'none';
+                });
+            }
+
+            function rotateZone3Banners() {
+                currentZone4Banner = (currentZone4Banner + 1) % zone4Banners.length;
+                showZone3Banner(currentZone4Banner);
+            }
+
+            // Show the first banner initially
+            showZone3Banner(currentZone4Banner);
+
+            // Rotate banners every 3 seconds (adjust as needed)
+            setInterval(rotateZone3Banners, 9000);
+        </script>
+
+
+</body>
+
+</html>
